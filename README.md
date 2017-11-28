@@ -22,8 +22,12 @@ new-service -Name Zabbix.WebSentinel.WindowsService -DisplayName Zabbix.WebSenti
 Start-Service "Zabbix.WebSentinel.WindowsService"
 Get-Service "Zabbix.WebSentinel.WindowsService"
 Write-Host  'Zabbix.WebSentinel.WindowsService...'
+
+
 #注意事项
 1.默认匹配Beisen或beisen的开通的 自用服务
 如果需要匹配其他服务请之前修改Sentinel.xml 增加你的名称
+
+
 2.poweshell脚本采集，会带来%5左右CPU波动消耗，目前没有经历优化，先满足监控需求
 
